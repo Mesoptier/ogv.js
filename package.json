@@ -2,6 +2,20 @@
   "name": "ogv",
   "version": "1.8.9",
   "description": "WebAssembly media player using Ogg/Vorbis/Theora/Opus/WebM libs compiled with Emscripten",
+  "exports": {
+    ".": {
+      "types": "./types/ogv.d.ts",
+      "default": "./dist/ogv.js"
+    },
+    "./ogv-support": {
+      "types": "./types/ogv-support.d.ts",
+      "default": "./dist/ogv-support.js"
+    },
+    "./ogv-version": {
+      "types": "./types/ogv-version.d.ts",
+      "default": "./dist/ogv-version.js"
+    }
+  },
   "main": "index.js",
   "files": [
     "index.js",
